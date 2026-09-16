@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  --color-primary: #006591;
+  --color-primary-container: #0ea5e9;
+  --color-on-primary: #ffffff;
+  --color-primary-fixed: #c9e6ff;
+  --color-primary-fixed-dim: #89ceff;
+  --color-on-primary-fixed: #001e2f;
+  --color-on-primary-container: #003751;
+
+  --color-surface: #f9f9ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f0f3ff;
+  --color-surface-container: #e7eefe;
+  --color-surface-container-high: #e2e8f8;
+  --color-surface-container-highest: #dce2f3;
+  --color-on-surface: #151c27;
+  --color-on-surface-variant: #3e4850;
+  --color-outline: #6e7881;
+  --color-outline-variant: #bec8d2;
+  --color-inverse-surface: #2a313d;
+
+  --color-tertiary: #006c49;
+  --color-tertiary-container: #00b17b;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-on-tertiary-container: #003b26;
+
+  --color-secondary: #565e74;
+  --color-secondary-container: #dae2fd;
+  --color-secondary-fixed: #dae2fd;
+  --color-on-secondary-fixed: #131b2e;
+  --color-on-secondary-container: #5c647a;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+}
+
+/* Custom Spacing & Typography mappings to match provided HTML */
+.p-space-xs { padding: 0.25rem; }
+.p-space-sm { padding: 0.5rem; }
+.p-space-md { padding: 0.75rem; }
+.p-space-lg { padding: 1rem; }
+.p-space-xl { padding: 1.25rem; }
+.p-space-2xl { padding: 1.5rem; }
+
+.px-space-xs { padding-left: 0.25rem; padding-right: 0.25rem; }
+.px-space-sm { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-space-md { padding-left: 0.75rem; padding-right: 0.75rem; }
+.px-space-lg { padding-left: 1rem; padding-right: 1rem; }
+.px-space-xl { padding-left: 1.25rem; padding-right: 1.25rem; }
+.px-space-2xl { padding-left: 1.5rem; padding-right: 1.5rem; }
+
+.py-space-xs { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-space-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-space-md { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-space-lg { padding-top: 1rem; padding-bottom: 1rem; }
+.py-space-xl { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.py-space-2xl { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+
+.gap-space-2xs { gap: 0.125rem; }
+.gap-space-xs { gap: 0.25rem; }
+.gap-space-sm { gap: 0.5rem; }
+.gap-space-md { gap: 0.75rem; }
+.gap-space-lg { gap: 1rem; }
+.gap-space-xl { gap: 1.25rem; }
+.gap-space-2xl { gap: 1.5rem; }
+
+.space-y-space-2xs > :not([hidden]) ~ :not([hidden]) { margin-top: 0.125rem; }
+.space-y-space-xs > :not([hidden]) ~ :not([hidden]) { margin-top: 0.25rem; }
+.space-y-space-sm > :not([hidden]) ~ :not([hidden]) { margin-top: 0.5rem; }
+.space-y-space-md > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
+.space-y-space-lg > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
+.space-y-space-xl > :not([hidden]) ~ :not([hidden]) { margin-top: 1.25rem; }
+
+.font-headline-sm { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; line-height: 18px; }
+.font-headline-md { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 15px; line-height: 20px; letter-spacing: -0.01em; }
+.font-headline-lg { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 17px; line-height: 22px; letter-spacing: -0.015em; }
+.font-display-lg { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; line-height: 24px; letter-spacing: -0.02em; }
+.font-metric-lg { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; line-height: 22px; letter-spacing: -0.01em; }
+.font-metric-md { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 13px; line-height: 17px; letter-spacing: -0.01em; }
+.font-code-tabular { font-family: 'Space Grotesk', monospace; font-weight: 500; font-size: 11px; line-height: 15px; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; }
+
+.font-body-sm { font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 10px; line-height: 14px; }
+.font-body-md { font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 11px; line-height: 16px; }
+.font-body-lg { font-family: 'Outfit', sans-serif; font-weight: 400; font-size: 12px; line-height: 17px; }
+.font-label-sm { font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 9px; line-height: 12px; letter-spacing: 0.04em; }
+.font-label-md { font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 10.5px; line-height: 14px; letter-spacing: 0.01em; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 13px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #F8FAFC;
+  color: #151c27;
+  overflow: hidden;
+}
+
+/* Material symbols adjustments */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}

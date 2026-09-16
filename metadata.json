@@ -1,0 +1,6 @@
+{
+  "name": "SATMAT Admin",
+  "description": "Gaming Risk Management & Settlement Operations Desk for real-time market trading, player user directory, withdrawal disbursements, and live dispute management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
