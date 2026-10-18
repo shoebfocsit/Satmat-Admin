@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm run build --workspace=satmat-admin",
-  "installCommand": "npm install",
-  "framework": null,
-  "outputDirectory": "satmat-admin/dist"
+  "framework": "vite",
+  "installCommand": "npm ci --no-fund --no-audit",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }

@@ -123,7 +123,7 @@ function transformBids(items: any[]): BidRecord[] {
     gameType: (b.gameType || 'JODI').toUpperCase() as BidRecord['gameType'],
     pickedNumber: b.number || '',
     amount: typeof b.amount === 'number' ? b.amount : 0,
-    potentialPayout: b.status === 'WON' ? (b.wonAmount || b.amount * 10) : null,
+    potentialPayout: b.wonAmount != null ? b.wonAmount : null,
     status: (b.status || 'PENDING').toUpperCase() as BidRecord['status'],
     timestamp: b.date || b.createdAt || ''
   }));
