@@ -65,13 +65,13 @@ function aistudioMediaPlugin(): Plugin {
 // LINT.ThenChange(//depot/google3/java/com/google/alkali/boq/makersuite/applet_dev_service/templates/initializers/react_theme/vite.config.ts:aistudio_media_plugin)
 
 export default defineConfig(({ mode }) => {
-  // Proxy target: env-driven so local dev hits localhost:8080 and prod preview hits Render.
-  // Set VITE_API_BASE_URL in .env to override. Falls back to Render for prod-like testing.
+  // Proxy target: env-driven so local dev hits localhost:8080 and prod preview hits the API subdomain.
+  // Set VITE_API_BASE_URL in .env to override. Falls back to the API subdomain for prod-like testing.
   const proxyTarget =
     process.env.VITE_API_BASE_URL ||
     process.env.VITE_API_URL ||
     (mode === 'production'
-      ? 'https://satmat-backendfinal.onrender.com'
+      ? 'https://api.satmat.cloud'
       : 'http://localhost:8080');
   // Strip trailing /api/v1 if present — proxy needs origin only
   const proxyOrigin = proxyTarget.replace(/\/api\/v1\/?$/, '').replace(/\/$/, '');

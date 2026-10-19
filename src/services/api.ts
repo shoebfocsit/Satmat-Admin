@@ -1,7 +1,7 @@
 const API_BASE =
   (import.meta as any).env?.VITE_API_BASE_URL ||
   (import.meta as any).env?.VITE_API_URL ||
-  'https://satmat-backendfinal.onrender.com/api/v1';
+  'https://api.satmat.cloud/api/v1';
 
 let _accessToken: string | null = null;
 let _refreshToken: string | null = null;
